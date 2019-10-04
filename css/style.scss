@@ -9,9 +9,13 @@
 	cursor: pointer;
 }
 
-.nav-bar li:hover {
-	transition: background-color 1s ease;
-	background-color: $highlight;
+.nav-bar {
+	li {
+		transition: background-color 1s ease-in-out;
+	}
+	li:hover {
+		background-color: $highlight;
+	}
 }
 
 @keyframes flow {

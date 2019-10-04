@@ -199,9 +199,12 @@ footer a {
   cursor: pointer;
 }
 
+.nav-bar li {
+  -webkit-transition: background-color 1s ease-in-out;
+  transition: background-color 1s ease-in-out;
+}
+
 .nav-bar li:hover {
-  -webkit-transition: background-color 1s ease;
-  transition: background-color 1s ease;
   background-color: #24282f;
 }
 
