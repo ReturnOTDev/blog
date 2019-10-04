@@ -10,6 +10,7 @@
 }
 
 .nav-bar li:hover {
+	transition: background-color 1s ease;
 	background-color: $highlight;
 }
 
