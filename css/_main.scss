@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:400,700&display=swap");
+$background: #2b303a;
+$snow: #ececec;
+$highlight: #24282f;
+$darklight: #48505d;
+// default
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	background-color: $background;
+	font-family: "Rajdhani", sans-serif;
+	color: $snow;
+	user-select: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+// container
+
+.wrapper {
+	text-align: center;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.container {
+	width: 80vw;
+	margin: 0 auto;
+}
+
+// header
+
+header .container {
+	margin-left: 0 auto;
+	margin: 2.75vh auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-bar {
+	text-align: right;
+	position: fixed;
+	background-color: $darklight;
+	width: 60vw;
+	right: 0;
+	top: 0;
+	height: 100vh;
+
+	.exit {
+		cursor: pointer;
+		margin: 3.5vh;
+		margin-bottom: 5vh;
+	}
+	li {
+		cursor: pointer;
+		text-align: center;
+		padding: 2rem 0;
+		width: 100%;
+		font-size: 1.5rem;
+	}
+
+	clip-path: circle(0% at 100% 0);
+}
+
+// main-trooper
+
+.main-trooper {
+	img {
+		width: 100%;
+	}
+}
+
+// footer
+
+footer {
+	padding: 2vh 0;
+	background: $highlight;
+	.container {
+		text-align: right;
+	}
+	a {
+		opacity: 0.75;
+	}
+}
+
+.social img {
+	height: 1rem;
+	margin-left: 1rem;
+}

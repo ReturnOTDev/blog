@@ -1,120 +1,28 @@
-@import url("https://fonts.googleapis.com/css?family=Rajdhani:400,700&display=swap");
-$background: #2b303a;
-$snow: #ececec;
-$highlight: #565e6e;
-$darklight: #1c2027;
-// default
-
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
-
-html {
-	font-size: 62.5%;
-}
-
-body {
-	background-color: $background;
-	font-family: "Rajdhani", sans-serif;
-	color: $snow;
-	user-select: none;
-}
-
-ul {
-	list-style-type: none;
-}
-
-.mobile-hide {
-	display: none;
-}
-
-// container
-
-.wrapper {
-	text-align: center;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.container {
-	width: 80vw;
-	max-width: 500px;
-	margin: 0 auto;
-}
-
-// header
-
-.logo {
-	margin: 2.75vh 0;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.nav-bar {
-	text-align: right;
-	position: fixed;
-	background-color: $darklight;
-	width: 60vw;
-	right: 0;
-	top: 0;
-	height: 100vh;
-
-	.exit {
-		cursor: pointer;
-		margin: 3.5vh;
-		margin-bottom: 5vh;
-	}
-	li {
-		cursor: pointer;
-		text-align: center;
-		padding: 2rem 0;
-		width: 100%;
-		font-size: 1.5rem;
-	}
-}
-
-// main-trooper
-
-.main-trooper {
-	img {
-		width: 100%;
-	}
-}
-
-// footer
-
-footer {
-	padding: 2vh 0;
-	background: $highlight;
-	.container {
-		text-align: right;
-	}
-	a {
-		text-decoration: none;
-		color: $background;
-		opacity: 0.5;
-	}
-}
-
-.social-item {
-	width: 1.5rem;
-	margin-left: 1rem;
-}
-.git {
-	width: 1.2rem;
-}
-
-.desktop-show {
-	display: none;
-}
+@import "_main.scss";
+@import "_responsive.scss";
 
 // animations
 
+.menu,
+.logo-small,
+.logo-large {
+	cursor: pointer;
+}
+
 .nav-bar li:hover {
-	background-color: #565e6e;
+	background-color: $highlight;
+}
+
+@keyframes flow {
+	from {
+		clip-path: circle(0% at 100% 0);
+	}
+	to {
+		clip-path: circle(110% at 100% 0);
+	}
+}
+
+.flow {
+	animation: flow 2s;
+	clip-path: circle(110% at 100% 0);
 }
