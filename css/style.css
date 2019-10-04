@@ -14,6 +14,17 @@ body {
   background-color: #2b303a;
   font-family: "Rajdhani", sans-serif;
   color: #ececec;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.wrapper {
   text-align: center;
   height: 100vh;
   display: -webkit-box;
@@ -28,16 +39,13 @@ body {
           justify-content: space-between;
 }
 
-ul {
-  list-style-type: none;
-}
-
 .container {
   width: 80vw;
   margin: 0 auto;
 }
 
 .logo-full {
+  cursor: pointer;
   width: 20.8rem;
   margin: 2.75vh 0;
 }
@@ -57,6 +65,7 @@ ul {
 .nav-bar li {
   font-size: 1.1rem;
   opacity: 0.8;
+  letter-spacing: 0.2rem;
 }
 
 .main-trooper {
