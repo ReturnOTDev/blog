@@ -48,6 +48,7 @@ ul {
   cursor: pointer;
   width: 20.8rem;
   margin: 2.75vh 0;
+  overflow: visible;
 }
 
 .nav-bar {
