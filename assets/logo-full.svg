@@ -10,7 +10,7 @@
       }
 
       .cls-1, .cls-2, .cls-3 {
-        font-family: Rajdhani-Bold, Rajdhani;
+        font-family: Rajdhani;
         font-weight: 700;
       }
 
