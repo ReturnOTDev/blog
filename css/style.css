@@ -4,12 +4,6 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
-  -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -254,5 +248,14 @@ footer a {
           animation: flow 2s;
   -webkit-clip-path: circle(110% at 100% 0);
           clip-path: circle(110% at 100% 0);
+}
+
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 /*# sourceMappingURL=style.css.map */

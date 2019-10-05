@@ -42,3 +42,10 @@
 	animation: flow 2s;
 	clip-path: circle(110% at 100% 0);
 }
+
+* {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+}
