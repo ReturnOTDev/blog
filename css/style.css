@@ -61,6 +61,7 @@ header .container {
 .nav-bar {
   text-align: right;
   position: fixed;
+  z-index: 10;
   background-color: #3e4b62;
   width: 60vw;
   right: 0;
@@ -87,6 +88,7 @@ header .container {
 .main-trooper {
   width: 100%;
   position: relative;
+  z-index: 0;
   bottom: 4vh;
 }
 
