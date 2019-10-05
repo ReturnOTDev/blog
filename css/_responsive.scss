@@ -22,7 +22,7 @@
 		}
 	}
 
-	.main-trooper img {
+	.main-trooper {
 		width: 40rem;
 	}
 	.social img {
@@ -45,6 +45,7 @@
 
 	.container {
 		width: 40%;
+		min-width: 60rem;
 	}
 	header .container {
 		flex-direction: column;
@@ -67,7 +68,7 @@
 		}
 	}
 
-	.main-trooper img {
+	.main-trooper {
 		width: 50rem;
 	}
 

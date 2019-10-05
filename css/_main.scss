@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Rajdhani:400,700&display=swap");
-$background: #2b303a;
+$background: #101927;
 $snow: #ececec;
-$highlight: #24282f;
-$darklight: #48505d;
+$light: #3e4b62;
+$green: #53d38e;
 // default
 
 * {
@@ -58,7 +58,7 @@ header .container {
 .nav-bar {
 	text-align: right;
 	position: fixed;
-	background-color: $darklight;
+	background-color: $light;
 	width: 60vw;
 	right: 0;
 	top: 0;
@@ -83,16 +83,16 @@ header .container {
 // main-trooper
 
 .main-trooper {
-	img {
-		width: 100%;
-	}
+	width: 100%;
+	position: relative;
+	bottom: 4vh;
 }
 
 // footer
 
 footer {
 	padding: 2vh 0;
-	background: $highlight;
+	background: $light;
 	.container {
 		text-align: right;
 	}

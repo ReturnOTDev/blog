@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  background-color: #2b303a;
+  background-color: #101927;
   font-family: "Rajdhani", sans-serif;
   color: #ececec;
   -webkit-user-select: none;
@@ -67,7 +67,7 @@ header .container {
 .nav-bar {
   text-align: right;
   position: fixed;
-  background-color: #48505d;
+  background-color: #3e4b62;
   width: 60vw;
   right: 0;
   top: 0;
@@ -90,13 +90,15 @@ header .container {
   font-size: 1.5rem;
 }
 
-.main-trooper img {
+.main-trooper {
   width: 100%;
+  position: relative;
+  bottom: 4vh;
 }
 
 footer {
   padding: 2vh 0;
-  background: #24282f;
+  background: #3e4b62;
 }
 
 footer .container {
@@ -133,7 +135,7 @@ footer a {
   .logo img {
     width: 100%;
   }
-  .main-trooper img {
+  .main-trooper {
     width: 40rem;
   }
   .social img {
@@ -153,6 +155,7 @@ footer a {
   }
   .container {
     width: 40%;
+    min-width: 60rem;
   }
   header .container {
     -webkit-box-orient: vertical;
@@ -181,7 +184,7 @@ footer a {
     width: 25%;
     font-size: 2.2rem;
   }
-  .main-trooper img {
+  .main-trooper {
     width: 50rem;
   }
   .social img {
@@ -200,12 +203,28 @@ footer a {
 }
 
 .nav-bar li {
-  -webkit-transition: background-color 1s ease-in-out;
-  transition: background-color 1s ease-in-out;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
 }
 
 .nav-bar li:hover {
-  background-color: #24282f;
+  background-color: #101927;
+}
+
+.menu,
+.exit,
+.social img {
+  -webkit-transition: -webkit-transform 0.1s;
+  transition: -webkit-transform 0.1s;
+  transition: transform 0.1s;
+  transition: transform 0.1s, -webkit-transform 0.1s;
+}
+
+.menu:hover,
+.exit:hover,
+.social img:hover {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
 }
 
 @-webkit-keyframes flow {
