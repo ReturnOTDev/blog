@@ -24,29 +24,15 @@ ul {
   list-style-type: none;
 }
 
-.wrapper {
-  text-align: center;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .container {
-  width: 80vw;
+  width: 80%;
   margin: 0 auto;
+  text-align: center;
 }
 
 header .container {
-  margin-left: 0 auto;
-  margin: 2.75vh auto;
+  margin-top: 3vh;
+  margin-bottom: 17vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,28 +73,16 @@ header .container {
 
 .main-trooper {
   width: 100%;
-  position: relative;
-  z-index: 0;
-  bottom: 4vh;
-  margin: 2rem 0;
-}
-
-footer {
-  padding: 2vh 0;
-  background: #3e4b62;
+  margin-bottom: 30vh;
 }
 
 footer .container {
   text-align: right;
 }
 
-footer a {
-  opacity: 0.75;
-}
-
 .social img {
   height: 1.5rem;
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 .desktop-show {
@@ -119,12 +93,15 @@ footer a {
   display: none;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 50rem) {
   .tablet-show {
     display: initial;
   }
   .tablet-hide {
     display: none;
+  }
+  .container {
+    width: 75vw;
   }
   .logo {
     width: 22rem;
@@ -132,15 +109,20 @@ footer a {
   .logo img {
     width: 100%;
   }
+  header {
+    margin-bottom: 22vh;
+  }
   .main-trooper {
-    width: 40rem;
+    width: 50rem;
+    margin-bottom: 22vh;
   }
   .social img {
-    height: 1.5rem;
+    height: 1.6rem;
+    margin-left: 4rem;
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 90rem) {
   .desktop-hide {
     display: none;
   }
@@ -151,20 +133,27 @@ footer a {
     display: none;
   }
   .container {
-    width: 40%;
-    min-width: 60rem;
+    width: 70%;
+    max-width: 136rem;
   }
   header .container {
+    margin: 0 auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 4rem;
   }
   .logo {
     width: 60rem;
+    margin-top: 5vh;
+    margin-bottom: 7.6vh;
+  }
+  nav {
+    height: 0;
   }
   .nav-bar {
+    -webkit-clip-path: none;
+            clip-path: none;
     position: static;
     background: none;
     display: -webkit-box;
@@ -175,21 +164,20 @@ footer a {
         -ms-flex-direction: row;
             flex-direction: row;
     height: 0;
-    margin-top: 8.5rem;
+    margin-bottom: 9.3vh;
   }
   .nav-bar li {
+    height: 0;
     width: 25%;
     font-size: 2.2rem;
   }
   .main-trooper {
-    width: 50rem;
+    width: 52.6rem;
+    margin-bottom: 13.8vh;
   }
   .social img {
     height: 2rem;
-    margin-left: 7.4rem;
-  }
-  footer {
-    padding: 3rem;
+    margin-left: 7rem;
   }
 }
 

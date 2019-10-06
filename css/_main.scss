@@ -28,24 +28,17 @@ ul {
 
 // container
 
-.wrapper {
-	text-align: center;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
 .container {
-	width: 80vw;
+	width: 80%;
 	margin: 0 auto;
+	text-align: center;
 }
 
 // header
 
 header .container {
-	margin-left: 0 auto;
-	margin: 2.75vh auto;
+	margin-top: 3vh;
+	margin-bottom: 17vh;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -81,26 +74,18 @@ header .container {
 
 .main-trooper {
 	width: 100%;
-	position: relative;
-	z-index: 0;
-	bottom: 4vh;
-	margin: 2rem 0;
+	margin-bottom: 30vh;
 }
 
 // footer
 
 footer {
-	padding: 2vh 0;
-	background: $light;
 	.container {
 		text-align: right;
-	}
-	a {
-		opacity: 0.75;
 	}
 }
 
 .social img {
 	height: 1.5rem;
-	margin-left: 1rem;
+	margin-left: 2rem;
 }

@@ -7,12 +7,16 @@
 
 //tablet
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 50rem) {
 	.tablet-show {
 		display: initial;
 	}
 	.tablet-hide {
 		display: none;
+	}
+
+	.container {
+		width: 75vw;
 	}
 
 	.logo {
@@ -22,17 +26,23 @@
 		}
 	}
 
+	header {
+		margin-bottom: 22vh;
+	}
+
 	.main-trooper {
-		width: 40rem;
+		width: 50rem;
+		margin-bottom: 22vh;
 	}
 	.social img {
-		height: 1.5rem;
+		height: 1.6rem;
+		margin-left: 4rem;
 	}
 }
 
 // desktop
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 90rem) {
 	.desktop-hide {
 		display: none;
 	}
@@ -44,40 +54,45 @@
 	}
 
 	.container {
-		width: 40%;
-		min-width: 60rem;
+		width: 70%;
+		max-width: 136rem;
 	}
 	header .container {
+		margin: 0 auto;
 		flex-direction: column;
-		margin-top: 4rem;
 	}
-
 	.logo {
 		width: 60rem;
+		margin-top: 5vh;
+		margin-bottom: 7.6vh;
+	}
+
+	nav {
+		height: 0;
 	}
 	.nav-bar {
+		clip-path: none;
 		position: static;
 		background: none;
 		display: flex;
 		flex-direction: row;
 		height: 0;
-		margin-top: 8.5rem;
 		li {
+			height: 0;
 			width: 25%;
 			font-size: 2.2rem;
 		}
+
+		margin-bottom: 9.3vh;
 	}
 
 	.main-trooper {
-		width: 50rem;
+		width: 52.6rem;
+		margin-bottom: 13.8vh;
 	}
 
 	.social img {
 		height: 2rem;
-		margin-left: 7.4rem;
-	}
-
-	footer {
-		padding: 3rem;
+		margin-left: 7rem;
 	}
 }
